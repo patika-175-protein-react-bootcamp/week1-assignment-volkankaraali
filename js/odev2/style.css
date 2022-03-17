@@ -1,72 +1,107 @@
-
-.card{
-    transition: all .2s ease;
-    
-    
-}
-.card:hover{
-    transform:scale(1.1);
-    box-shadow: -5px 5px 5px 5px;
+* {
+  box-sizing: border-box;
 }
 
-img{
-    width: 100%;
-  
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-button{
-    background-color: white;
-    padding: 5px;
-    border: none;
-    font-weight: bold;
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
 
-    font-family: 'Caveat';
-    font-size: 2rem;
-   
-    transition:0.7s;
-    
-}
-.All:hover{
-    border-radius: 20%;
-    background: linear-gradient(to right, green ,rgb(72, 169, 235)  , orange);
-    color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.Karadeniz:hover{
-    background-color: green;
-    color: white;
-    border-radius: 20%;
-}
-.Ege:hover{
-    background-color: rgb(72, 169, 235);
-    border-radius: 20%;
-    color: white;
-}
-.Akdeniz:hover{
-    background-color: orange;
-    color: white;
-    border-radius: 20%;
+ul li:nth-child(odd) {
+  background: #f9f9f9;
 }
 
-ul li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    color: black;
+ul li:hover {
+  background: #ddd;
 }
 
-h4,h5{
-    font-family: 'Caveat';
-}
-h4{
-    font-size: 3rem;
-}
-h5{
-    font-size: 2rem;
+ul li.checked {
+  background: #276678;
+  color: #fff;
+  text-decoration: line-through;
 }
 
-.card-text{
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 1rem;
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f78501;
+  color: white;
+
+}
+
+.header {
+  background-color: #f78501;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+img {
+  background-color: white;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.button:hover {
+  background-color: #bbb;
 }

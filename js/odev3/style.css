@@ -1,0 +1,72 @@
+
+.card{
+    transition: all .2s ease;
+    
+    
+}
+.card:hover{
+    transform:scale(1.1);
+    box-shadow: -5px 5px 5px 5px;
+}
+
+img{
+    width: 100%;
+  
+}
+
+button{
+    background-color: white;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+
+    font-family: 'Caveat';
+    font-size: 2rem;
+   
+    transition:0.7s;
+    
+}
+.All:hover{
+    border-radius: 20%;
+    background: linear-gradient(to right, green ,rgb(72, 169, 235)  , orange);
+    color: white;
+}
+
+.Karadeniz:hover{
+    background-color: green;
+    color: white;
+    border-radius: 20%;
+}
+.Ege:hover{
+    background-color: rgb(72, 169, 235);
+    border-radius: 20%;
+    color: white;
+}
+.Akdeniz:hover{
+    background-color: orange;
+    color: white;
+    border-radius: 20%;
+}
+
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h4,h5{
+    font-family: 'Caveat';
+}
+h4{
+    font-size: 3rem;
+}
+h5{
+    font-size: 2rem;
+}
+
+.card-text{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1rem;
+}
