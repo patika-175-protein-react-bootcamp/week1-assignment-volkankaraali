@@ -26,7 +26,7 @@ let todoList = [
 const todoInput = document.getElementById("task")
 const todoDisplayUl = document.getElementById("list");
 const addedToast = document.getElementById("liveToastAdd")
-const inputTost = document.getElementById("liveToastInput")
+const inputToast = document.getElementById("liveToastInput")
 
 const addTodo = () => {
     if (todoInput.value === "" || todoInput.value === " ") {
@@ -49,7 +49,7 @@ const displayTodoList = () => {
     todoList.forEach(todo => {
 
         todoDisplayUl.innerHTML += `
-        <li onclick="li.">
+        <li>
         ${todo.title}
         <button class="btn-close close" onclick="deleteTodo(${todo.id})"></button>
         </li>
